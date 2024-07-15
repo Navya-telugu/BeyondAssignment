@@ -1,0 +1,221 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f5f5f5; /* Light mode background */
+  color: #333; /* Light mode text color */
+}
+
+.dark-mode .chat-window {
+  background-color: #333; /* Dark mode background */
+  color: #f5f5f5; /* Dark mode text color */
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: inherit;
+  border-bottom: 0.5px solid;
+  /* Inherit text color from parent */
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.selected-chat {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.chat-name {
+  font-weight: bold;
+}
+
+.right-content {
+  display: flex;
+}
+
+.call-button {
+  background-color: #006bb3;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.call-button:hover {
+  background-color: #005b99;
+}
+
+.no-messages {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.new-message-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-icons {
+  margin-right: 10px;
+}
+
+.input-icons .icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #888;
+  cursor: pointer;
+}
+
+.new-message-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for Received Messages */
+.message-received {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 3px;
+}
+
+.message-received .message-content {
+  background-color: #e0e0e0; /* Light mode received message background */
+  color: #333; /* Light mode received message text color */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.dark-mode .message-received .message-content {
+  background-color: #444; /* Dark mode received message background */
+  color: #f5f5f5; /* Dark mode received message text color */
+}
+
+/* Styles for Sent Messages */
+.message-sent {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 3px;
+}
+
+.message-sent .message-content {
+  background-color: #0088cc; /* Light mode sent message background */
+  color: #fff; /* Light mode sent message text color */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.dark-mode .message-sent .message-content {
+  background-color: #00aaff; /* Dark mode sent message background */
+  color: #f5f5f5; /* Dark mode sent message text color */
+}
+
+/* Scrollable chat messages */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.emoji-picker {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between emoji categories */
+  padding: 20px; /* Add padding around the emoji picker */
+}
+
+.emoji-category {
+  flex: 1; /* Make each category expand to fill available space */
+  max-width: 860px; /* Limit the width of each emoji category */
+}
+
+.category-title {
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between category title and emoji list */
+}
+
+.emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between emojis */
+}
+
+.emoji {
+  cursor: pointer;
+  font-size: 40px; /* Adjust emoji size */
+}
+
+.emoji:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.sent-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sent-image {
+  width: 100px; /* Adjust the size of the sent image */
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 58px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}

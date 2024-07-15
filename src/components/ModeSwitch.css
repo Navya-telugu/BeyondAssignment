@@ -1,0 +1,12 @@
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .dark-mode .mode-switch {
+    background-color: #444;
+    color: #fff;
+  }
+  

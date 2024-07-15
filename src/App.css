@@ -1,0 +1,55 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 300px; /* Adjust the width of the sidebar as needed */
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main::-webkit-scrollbar{
+  display: none;
+}
+
+.placeholder {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  flex: 1;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode .sidebar {
+  border-color: #555;
+}
+
+.dark-mode .placeholder {
+  color: #bbb;
+}

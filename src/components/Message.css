@@ -1,0 +1,18 @@
+.message {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.message-content {
+  font-size: 16px;
+}
+
+.message-time {
+  font-size: 0.8em;
+  color: #888;
+  text-align: right;
+}
+
+.dark-mode .message {
+  border-color: #555;
+}

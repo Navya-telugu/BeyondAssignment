@@ -1,0 +1,96 @@
+.header-container {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0088cc; /* Light background for contrast */
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-icon, .search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white; /* Telegram Blue for icons */
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color:white; /* Telegram Blue for the header text */
+}
+
+.search-input {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #0088cc;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  border-radius: 5px;
+}
+
+.menu-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  background-color: #0088cc; /* Telegram Blue for menu icons */
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.dark .header {
+  background-color: #444;
+  border-bottom: 1px solid #555;
+}
+
+.dark .menu {
+  background-color: #444;
+  border: 1px solid #555;
+}
+
+.dark .menu-item {
+  border-bottom: 1px solid #666;
+  color: white;
+}
+
+.dark .menu-icon, .dark .search-icon, .dark .menu-item i {
+  color: white;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 10px;
+}
